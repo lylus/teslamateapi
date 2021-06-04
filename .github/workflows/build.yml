@@ -1,6 +1,5 @@
 name: build
 
-
 on:
   push:
     branches:
@@ -19,7 +18,7 @@ jobs:
         id: docker_meta
         uses: docker/metadata-action@v3.3.0
         with:
-          images: tobiasehlert/teslamateapi
+          images: lylus/teslamateapi
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1.2.0
